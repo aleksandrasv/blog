@@ -2,7 +2,7 @@
 practicing in creating blog
 
 blog page
-https://practiceblogpage.herokuapp.com/reg
+https://practiceblogpage.herokuapp.com
  
  Log In:
  Username: someUser
