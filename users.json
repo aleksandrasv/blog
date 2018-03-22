@@ -1,0 +1,62 @@
+[
+  {
+    "password": "605ac186-162d-492e-b772-c0c2b6e4b4c5",
+    "picture": "https://picsum.photos/200/300/?random",
+    "username": "Frances",
+    "email": "francesyoung@filodyne.com"
+  },
+  {
+    "password": "63330ef9-25a4-4b53-8a44-a0093816f8f8",
+    "picture": "https://picsum.photos/200/300/?random",
+    "username": "Jan",
+    "email": "janyoung@filodyne.com"
+  },
+  {
+    "password": "8bb4d6d8-3e54-4c45-8ff3-9b15688a5281",
+    "picture": "https://picsum.photos/200/300/?random",
+    "username": "Hall",
+    "email": "hallyoung@filodyne.com"
+  },
+  {
+    "password": "b7616f47-e1c7-4667-89f1-199bb0577d65",
+    "picture": "https://picsum.photos/200/300/?random",
+    "username": "Nichols",
+    "email": "nicholsyoung@filodyne.com"
+  },
+  {
+    "password": "2189764e-1b7a-4a1e-9df6-cdc08dd5118f",
+    "picture": "https://picsum.photos/200/300/?random",
+    "username": "Tillman",
+    "email": "tillmanyoung@filodyne.com"
+  },
+  {
+    "password": "0c3c9765-b3f4-4225-8bea-1833a4f9f17b",
+    "picture": "https://picsum.photos/200/300/?random",
+    "username": "Beth",
+    "email": "bethyoung@filodyne.com"
+  },
+  {
+    "password": "74ed9234-6611-487f-86af-1f4783ee2399",
+    "picture": "https://picsum.photos/200/300/?random",
+    "username": "Casey",
+    "email": "caseyyoung@filodyne.com"
+  },
+  {
+    "password": "23e57162-e8b3-4be6-9fc0-c97fe8b930a5",
+    "picture": "https://picsum.photos/200/300/?random",
+    "username": "Cheryl",
+    "email": "cherylyoung@filodyne.com"
+  },
+  {
+    "password": "97ff1660-7f83-4b55-bcee-165d38a9247b",
+    "picture": "https://picsum.photos/200/300/?random",
+    "username": "Tamera",
+    "email": "tamerayoung@filodyne.com"
+  },
+  {
+    "password": "fad228b2-8a3b-408a-beca-c8314fd72459",
+    "picture": "https://picsum.photos/200/300/?random",
+    "username": "Edith",
+    "email": "edithyoung@filodyne.com"
+  }
+]

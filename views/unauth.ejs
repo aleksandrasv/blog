@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unauthorized user</title>
+	<% include parts/head %>
+</head>
+<body>
+	<!-- Navigation -->
+	<% include parts/navigation %>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 offset-md-3 unauth">
+				<img src="img/sadFace.png" class="sadFace mt-4" alt="">
+				<h3 class="mt-3">This username and password does not match our records, 
+					<br><small>Please try again or register</small>
+				</h3>
+				<button type="" class="btn btn-primary"><a href="/reg">Register</a></button>
+				<button type="" class="btn btn-primary"><a href="/auth">Log In</a></button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include parts/head %>
+	<title>Personal Account</title>
+	<!-- Custom JS -->
+	<script src="/js/post.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<!-- Navigation -->
+	<% if(username){%>
+       <% include parts/userNav %>
+    <%} else {%>
+  	 <% include parts/navigation %> <%}%>
+
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-lg-9 offset-md-1">
+				<div class="row justify-content-between">
+					<div class="col-md-8">
+						<h2>Personal <small>Cabinet</small></h2>
+					</div>
+					<div class="col-md-2">
+						<button class="btn btn-primary aling" id="logOut">Log OUT</button>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-9 offset-md-1">
+				<hr>
+				<h4 class="added">Add New Post</h4>
+			</div>
+		</div>
+		<div class="row">
+	        <div class="col-lg-9 offset-md-1">
+	          <form novalidate="">
+	            <div class="form-group">
+	              <label for="title">Title</label>
+	              <input class="form-control" type="text" name="title" id="title" placeholder="Title">
+	              <span class="help-block">Title Required</span>
+	            </div>
+	            <div class="form-group">
+	              <label for="content">Content</label>
+	              <textarea class="form-control" id="content" name="content"rows="3" placeholder="Your Text"></textarea>
+	              <span class="help-block">Content Required</span>
+	            </div>
+	            <div class="form-group">
+	              <button type="submit" class="btn btn-primary">SENT</button>
+	            </div>
+	          </form>
+	        </div>
+      </div>
+      <div class="row mt-3">
+      	<div class="col-lg-9 offset-md-1">
+      		<p class="pEdits">Your New Post Has Been Added</p>
+      		<button id="addNew" class="btn btn-primary pEdits">Add Another Post</button>
+      	</div>
+      </div>
+       <div class="row">
+       	<div class="col-lg-9 offset-md-1">
+       		<hr>
+       		<h2>All Posts
+       			<small>by You</small>
+       		</h2>
+       		<hr>
+       		<div class="row">
+       	<% userPosts.forEach(function(userPost){%>
+       		<div class="col-lg-6 portfolio-item mb-4">
+	          <div class="card h-100">
+	          <input type="hidden" value="<%= userPost.author %>">
+	            <img class="card-img-top" src="<%= userPost.picture %>">
+	            <div class="card-body">
+	              <h4 class="card-title">
+	                <%= userPost.title %>
+	              </h4>
+	              <p class="card-text"><%= userPost.content %></p>
+	            </div>
+	            <div class="card-footer">
+	            <a href="/post/<%= userPost.title %>"><button type="" class="btn btn-primary">Edit Post</button></a>
+	  			</div>
+	          </div>
+	        </div>
+       	<%})%>
+       	</div>
+       	</div>
+    	</div>
+	</div>
+</body>
+</html>

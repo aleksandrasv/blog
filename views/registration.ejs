@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include parts/head %>
+	<title>Registration</title>
+	<!-- Custom JS -->
+</head>
+<body>
+	<!-- Navigation -->
+	<% if(username){%>
+       <% include parts/userNav %>
+    <%} else {%>
+  	 <% include parts/navigation %> <%}%>
+
+
+		<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-2">
+				<h2 class="my-4">Registration
+	            	<small>Form</small>
+	          	</h2>
+	          	<hr>
+          	</div>
+        </div>
+        <div class="row completed">
+			<div class="col-md-6 offset-md-2">
+				<h2 class="my-4">Your Registration Is Complete 
+	            	<small>Please <a href="/auth" class="login">Log in</a> Now</small>
+	          	</h2>
+	          	<hr>
+          	</div>
+        </div>
+        <div class="row">
+        	<div class="col-md-6 offset-md-2">
+				<form novalidate="" method="POST" action="/req">
+		  			<div class="form-group">
+		  				<div class="form-row">
+						    <div class="form-group col-md-6">
+						      <label for="fnema">First Name</label>
+						      <input type="text" name="firstName" class="form-control" id="fname" placeholder="First Name">
+						      <span class="help-block">First Name Requred</span>
+						      <span class="help-block">First Name at least 2 symbols</span>
+						    </div>
+						    <div class="form-group col-md-6">
+						      <label for="lname">Last Name</label>
+						      <input type="text" name="lastName" class="form-control" id="lname" placeholder="Last Name">
+						      <span class="help-block">Last Name Requred</span>
+						      <span class="help-block">Last Name at least 2 symbols</span>
+						    </div>
+						  </div>
+					</div>
+					<div class="form-group">
+		  				<div class="input-group">
+			    			<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+			    			<div class="input-group-prepend">
+	          					<div class="input-group-text">@</div>
+	        				</div>
+		    			</div>
+	        				<span class="help-block">Email Requred</span>
+	        				<span class="help-block">Email Invalid</span>
+		  			</div>
+		 			<div class="form-group">
+		 				<div class="input-group">
+		   			 		<input type="text" class="form-control" name="username" id="username" placeholder="Username">
+		   			 		<div class="input-group-prepend">
+	          					<div class="input-group-text">^_^</div>
+	        				</div>
+		   			 	</div>
+		   			 		<span class="existingUser">User with this user name already exists</span>
+	        				<span class="help-block">Username Requred</span>
+	        				<span class="help-block">Username Must be at least 3 symbols</span>
+		  			</div>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label for="pass">Password</label>
+					      <input type="password" name="password" class="form-control" id="pass" placeholder="Password">
+					      <span class="help-block">Password Requred</span>
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label for="passConf">Confirm Password</label>
+					      <input type="password" name="confPassword" class="form-control" id="passConf" placeholder="Password">
+					      <span class="help-block">Password Conformation Requred</span>
+					      <span class="help-block">Passwords Are Not Matching</span>
+					    </div>
+					  </div>
+		  			<button type="submit" class="btn btn-primary">Register</button>
+		  			<button type="" class="btn btn-primary"><a href="/auth">Log in</a></button>
+				</form>
+			</div>	
+		</div>
+	</div>
+<script src="js/registration.js" type="text/javascript" charset="utf-8" async></script>
+</body>
+</html>

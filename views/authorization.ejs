@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include parts/head %>
+	<title>Authorization</title>
+	<!-- Custom JS -->
+    <script src="/js/auth.js" type="text/javascript" charset="utf-8" async></script>
+</head>
+<body>
+	<!-- Navigation -->
+	<% include parts/navigation %>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 offset-md-4">
+				<h2 class="my-4">Authorization
+	            	<small>Form</small>
+	          	</h2>
+          	</div>
+        </div>
+        <div class="row">
+        	<div class="col-md-4 offset-md-4 authForm">
+				<form novalidate="" action="/auth" method="POST">
+		  			<div class="form-group">
+		  				<div class="mb-2">
+		  					<span class="help-block" id="error">Email or password don't match records. Please Regester.</span>
+		  				</div>
+		  				<div class="input-group">
+			    			<input type="text" class="form-control" id="username" name="username" placeholder="Username">
+			    			<div class="input-group-prepend">
+	          					<div class="input-group-text">@</div>
+	        				</div>
+		    			</div>
+		    			<span class="help-block userlRqr">Username Required</span>
+		  			</div>
+		 			<div class="form-group">
+		 				<div class="input-group">
+		   			 		<input type="password" class="form-control" name="password" id="password" placeholder="Password">
+		   			 		<div class="input-group-prepend">
+	          					<div class="input-group-text">**</div>
+	        				</div>
+		   			 	</div>
+		   			 	<span class="help-block passRqr">Password Required</span>
+		  			</div>
+		  			<button type="submit" class="btn btn-primary">Log In</button>
+		  			<button type="" class="btn btn-primary"><a href="/reg">Regester</a></button>
+				</form>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>
