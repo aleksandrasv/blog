@@ -1,5 +1,7 @@
 # blog
 practicing in creating blog
+blog page
+https://practiceblogpage.herokuapp.com/reg
  
  Log In:
  Username: someUser
@@ -7,3 +9,4 @@ practicing in creating blog
  Password: user
  
  or create your own account.
+
